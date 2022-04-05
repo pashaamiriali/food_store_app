@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       margin: EdgeInsets.all(12),
                       decoration: BoxDecoration(
                           image: DecorationImage(
+                            //TODO serverside data
                               image: NetworkImage(
                                   "https://unsplash.com/photos/fczCr7MdE7U/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8YmFuYW5hfGVufDB8fHx8MTY0OTA0NDkzNw&force=true"),
                               fit: BoxFit.cover),
@@ -67,11 +68,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.surface,
-                                borderRadius: BorderRadius.vertical(
+                                borderRadius: const BorderRadius.vertical(
                                     bottom: Radius.circular(20))),
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             child: Column(children: [
-                              const ListTile(
+                              //TODO serverside data
+                               ListTile(
                                 title: Text("Banana"),
                                 subtitle: Text("33000T"),
                                 trailing: Text("available"),
@@ -112,6 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Wrap _buildCategoryChips() {
     return Wrap(
+      //TODO serverside data
       children: [
         Padding(
             padding: const EdgeInsets.all(12),
